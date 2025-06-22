@@ -4,21 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Matematik - Naila</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <!-- Head Content -->
-    <header> </header>
+    <!-- Header Content -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Kalkulator Matematika</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <ul>
+                        <li><a href="#segitiga">Segitiga</a></li>
+                        <li><a href="#jajargenjang">Jajargenjang</a></li>
+                    </ul>
+            </div>
+            
+                <div class="header-right">
+                    <img src="" alt="gambar header">
+                </div>
+        </div>
+    </header>
     
     
     <!-- Main Content -->
-    <main> </main>
+    <main>
+        <section id="segitiga" class="segitiga-section">
+            <h2>Segitiga</h2>
+
+            <!-- Tab Menu -->
+            <nav class="tab-menu">
+                <button data-tab="luas-segitiga">Luas</button>
+                <button data-tab="keliling-segitiga">Keliling</button>
+            </nav>
+
+            <!-- Luas -->
+            <div id="luas-segitiga" class="tab-content">
+                <div class="kalkulator-box">
+                    <!-- Kiri : content -->
+                    <div class="left-container">
+                        <img src="segitiga.png" alt="Gambar Segitiga">
+                        <p>L = 1/2 × a × t</p>
+                        <div class="ket-wrapper">
+                            <p>Keterangan:</p>
+                            <ul>
+                                <li>L = Luas segitiga</li>
+                                <li>a = Alas segitiga</li>
+                                <li>t = Tinggi segitiga</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Kanan : Form Input -->
+                    <form id="luas-segitiga-form">
+                        <p>Masukkan alas dan tinggi segitiga :</p>
+                        <label for="alas-segitiga">Alas:</label>
+                        <input type="number" id="alas-segitiga" name="alas-segitiga" required>
+                        
+                        <label for="tinggi-segitiga">Tinggi:</label>
+                        <input type="number" id="tinggi-segitiga" name="tinggi-segitiga" required>
+                        <label>Hasil:</label>
+                        <div id="hasil-luas-segitiga-container" class="result-box"></div>
+                        <div class="button-group">
+                            <button type="reset" form="luas-segitiga-form">Reset</button>
+                            <button type="submit" form="luas-segitiga-form">Hitung Luas</button>
+                        </div>
+                    </form>                       
+                </div>
+            </div>
+
+            <!-- Keliling -->
+            <div id="keliling-segitiga" class="tab-content">
+                <div class="kalkulator-box">
+                    <!-- Kiri : konten -->
+                    <div class="left-container">
+                        <img src="segitiga.png" alt="Gambar Segitiga">
+                        <p>K = s1 + s2 + s3</p>
+                        <div class="ket-wrapper">
+                            <p>Keterangan:</p>
+                            <ul>
+                                <li>K = Keliling segitiga</li>
+                                <li>s1 = Sisi 1 segitiga</li>
+                                <li>s2 = Sisi 2 segitiga</li>
+                                <li>s3 = Sisi 3 segitiga</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Kanan : Form Input -->
+                    <form id="keliling-segitiga-form">
+                        <p>Masukkan panjang ketiga sisi segitiga :</p>
+
+                        <label for="sisi1-segitiga">Sisi 1:</label> 
+                        <input type="number" id="sisi1-segitiga" name="sisi1-segitiga" required>
+                        
+                        <label for="sisi2-segitiga">Sisi 2:</label>
+                        <input type="number" id="sisi2-segitiga" name="sisi2-segitiga" required>
+                        
+                        <label for="sisi3-segitiga">Sisi 3:</label>
+                        <input type="number" id="sisi3-segitiga" name="sisi3-segitiga" required>
+                        
+                        <label>Hasil:</label>
+                        <div id="hasil-luas-segitiga-container" class="result-box"></div>
+
+                        <div class="button-group">
+                            <button type="reset" form="keliling-segitiga-form">Reset</button>
+                            <button type="submit" form="keliling-segitiga-form">Hitung Keliling</button>
+                        </div>
+                    </form>                   
+                </div>
+            </div>
+        </section> 
+        
+        <section id="jajargenjang" class="jajargenjang-section">
+            <h2>Jajargenjang</h2>
+            <!-- Tab Menu -->
+            <nav class="tab-menu">
+                <button data-tab="luas-jajargenjang">Luas</button>
+                <button data-tab="keliling-jajargenjang">Keliling</button>
+            </nav>
+
+            <!-- Luas -->
+            <div id="luas-jajargenjang" class="tab-content">
+                <div class="kalkulator-box">
+                    <!-- Kiri : content -->
+                    <div class="left-container">
+                        <img src="jajargenjang.png" alt="Gambar Jajargenjang">
+                        <p>Luas = a * t</p>
+                        <div class="ket-wrapper">
+                            <p>Keterangan:</p>
+                            <ul>
+                                <li>Luas = Luas jajargenjang</li>
+                                <li>a    = Alas jajargenjang</li>
+                                <li>t    = Tinggi jajargenjang</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Kiri : Form Input -->
+                    <form id="luas-jajargenjang-form">
+                        <p>Masukkan alas dan tinggi jajargenjang :</p>
+
+                        <label for="alas-jajargenjang">Alas:</label>
+                        <input type="number" id="alas-jajargenjang" name="alas-jajargenjang" required>
+                        
+                        <label for="tinggi-jajargenjang">Tinggi:</label>
+                        <input type="number" id="tinggi-jajargenjang" name="tinggi-jajargenjang" required>
+                        
+                        <label>Hasil:</label>
+                        <div id="hasil-luas-jajargenjang-container" class="result-box"></div>
+
+                        <div class="button-group">
+                            <button type="reset" form="luas-jajargenjang-form">Reset</button>
+                            <button type="submit" form="luas-jajargenjang-form">Hitung Luas</button>
+                        </div>
+                    </form>   
+                </div>
+            </div>
+
+            <!-- Keliling -->
+            <div id="keliling-jajargenjang" class="tab-content">
+                <div class="kalkulator-box">
+
+                    <!-- Kiri : content -->
+                    <div class="left-container">
+                        <img src="jajargenjang.png" alt="Gambar Jajargenjang">
+                        <p>K = 2 × (sisi1 + sisi2)</p>
+                        <div class="ket-wrapper">
+                            <p>Keterangan:</p>
+                            <ul>
+                                <li>K     = Keliling jajargenjang</li>
+                                <li>sisi1 = Sisi 1 jajargenjang</li>
+                                <li>sisi2 = Sisi 2 jajargenjang</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Kanan : Form Input -->
+                    <form id="keliling-jajargenjang-form">
+                        <p>Masukkan panjang kedua sisi jajargenjang :</p>
+
+                        <label for="sisi1-jajargenjang">Sisi 1:</label>
+                        <input type="number" id="sisi1-jajargenjang" name="sisi1-jajargenjang" required>
+                        
+                        <label for="sisi2-jajargenjang">Sisi 2:</label>
+                        <input type="number" id="sisi2-jajargenjang" name="sisi2-jajargenjang" required>
+                        
+                        <label>Hasil:</label>
+                        <div id="hasil-keliling-jajargenjang-container" class="result-box"></div>
+
+                        <div class="button-group">
+                            <button type="reset" form="keliling-jajargenjang-form">Reset</button>
+                            <button type="submit" form="keliling-jajargenjang-form">Hitung Keliling</button>
+                        </div>
+                    </form>      
+                </div>
+            </div>
+        </section>
+   
+</main>
     
     
     <!-- Footer Content -->
     <footer> </footer>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,283 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 100px;
+  scroll-behavior: smooth;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    height: 400px;
+}
+
+
+
+
+.header-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Supaya h1 dan p disusun vertikal */
+    gap: 5px;
+    width: 100%;
+    max-width: 400px; /* Batas maksimal lebar */
+}
+
+.header-left h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: start;
+}
+
+
+.header-left li {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    max-width: 400px; /* Batas maksimal lebar gambar */
+}
+
+.header-right img {
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%; /* Gambar akan menyesuaikan dengan lebar container */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+
+.segitiga-section {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.segitiga-section h2 {
+    text-align: center;
+    font-family:poppins;
+    gap: 5px;
+}
+
+
+
+
+/* style untuk tab menu */
+.tab-menu {
+    display: inline-flex;
+    overflow-x: auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    padding: 2px;
+    margin-bottom: 10px;
+
+}
+
+.tab-menu button {
+    flex: 0 0 auto;                
+    width: 120px;                 
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 3px;
+    
+}
+.tab-menu button.active {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.tab-content {
+    display: none
+}
+
+
+
+/* style untuk box kalkulator */
+.kalkulator-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    min-height: 400px;
+    justify-content: center;
+    align-items: stretch;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: auto; 
+    gap: 20px; 
+}
+
+
+
+/* style untuk konten bagian kanan */
+form {
+    flex: 1 1 250px;
+    min-width: 200px;
+}
+
+.kalkulator-box form p {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.result-box {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    min-height: 50px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-group button {
+    text-align: center;
+    font-family: poppins;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+
+/* style untuk content bagian kiri */
+.left-container {
+    flex: 1 1 400px;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 0 auto; 
+    justify-content: center;
+}
+
+.left-container img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.left-container p {
+    font-family: poppins;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.ket-wrapper {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: poppins;
+    font-size: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto; 
+}
+
+.ket-wrapper ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+label {
+    font-family: poppins;
+    font-size: 1.2rem;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kalkulator-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  
+
+
+
+
+.jajargenjang-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.jajargenjang-section h2 {
+    text-align: center;
+    font-family: poppins;
+}
+
+
