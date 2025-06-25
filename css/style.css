@@ -60,25 +60,6 @@ body {
     gap: 20px;
 }
 
-/* Responsif: jika layar kecil (mobile) */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-  }
-
-  .header-right {
-    height: auto; /* ubah dari fixed ke auto */
-    padding: 20px 0; /* beri jarak agar tidak numpuk */
-  }
-
-  .header-right img {
-    max-width: 70%;
-    height: auto;
-    object-fit: contain; /* jaga proporsi gambar */
-  }
-}
-
-
 
 main {
     display: flex;
@@ -272,18 +253,6 @@ label {
     display: block;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .kalkulator-box {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-  
-
-
-
-
 .jajargenjang-section {
     display: flex;
     justify-content: center;
@@ -298,4 +267,29 @@ label {
     font-family: poppins;
 }
 
+
+/* Responsif: jika layar kecil (mobile) */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-right {
+    height: auto; /* ubah dari fixed ke auto */
+    padding: 10px 0; /* beri jarak agar tidak numpuk */
+  }
+
+  .header-right img {
+    max-width: 70%;
+    height: auto;
+    object-fit: contain; /* jaga proporsi gambar */
+  }
+}
+
+  .kalkulator-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
