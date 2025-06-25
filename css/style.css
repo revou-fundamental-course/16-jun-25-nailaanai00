@@ -34,7 +34,7 @@ body {
     list-style: none;
     padding: 10px;
     border: 1px solid black;
-    margin: 20px;
+    margin: 10px;
     width: 200px;
     border-radius: 10px;
     text-align: center;
@@ -160,7 +160,7 @@ form {
 
 .kalkulator-box label {
     font-family: poppins;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: block;
 }
 
@@ -179,7 +179,7 @@ input[type="number"] {
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     min-height: 50px;
     width: 100%;
     max-width: 400px;
@@ -198,7 +198,7 @@ input[type="number"] {
     font-family: poppins;
     font-size: 1rem;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
     padding: 10px 20px;
 }
@@ -273,6 +273,10 @@ input[type="number"] {
   .header-container {
     flex-direction: column;
     gap: 10px;
+  }
+  .header-left li {
+    width: 100%;
+    margin: 10px 0; /* ubah margin untuk mobile */
   }
 
   .header-right {
