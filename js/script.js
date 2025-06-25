@@ -63,7 +63,7 @@ function hitungLuasSegitiga() {
     return;
   }
   const luas = (alas * tinggi) / 2;
-  document.getElementById('hasil-luas-segitiga').textContent = ` ${luas} cm²`;
+  document.getElementById('hasil-luas-segitiga').textContent = `Luas Segitiga = ${luas} cm²`;
 }
 
 // fungsi untuk menghitung keliling segitiga

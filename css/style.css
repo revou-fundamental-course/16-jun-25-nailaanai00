@@ -9,17 +9,17 @@ body {
     flex-direction: row;
     align-items: flex-start;
     gap: 150px;
-    height: auto;; /* Batas maksimal tinggi */;
+    height: auto;
 }
 
 
 .header-left {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Supaya h1 dan p disusun vertikal */
+    flex-direction: column;
     gap: 5px;
     width: 100%;
-    max-width: 400px; /* Batas maksimal lebar */
+    max-width: 400px;
 }
 
 .header-left h1 {
@@ -149,32 +149,37 @@ main {
 /* style untuk konten bagian kanan */
 form {
     flex: 1 1 250px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .kalkulator-box form p {
     font-family: 'Poppins';
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 10px;
+}
+
+.kalkulator-box label {
+    font-family: poppins;
+    font-size: 0.8rem;
+    display: block;
 }
 
 input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid black;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .result-box {
-    border: 1px solid #333;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     min-height: 50px;
     width: 100%;
     max-width: 400px;
@@ -206,7 +211,7 @@ input[type="number"] {
     max-width: 500px;
     min-width: 200px;
     margin: 0 auto; 
-    justify-content: center;
+    justify-content: start;
 }
 
 .left-container img {
@@ -246,11 +251,7 @@ input[type="number"] {
 
 
 
-label {
-    font-family: poppins;
-    font-size: 1.2rem;
-    display: block;
-}
+
 
 .jajargenjang-section {
     display: flex;
