@@ -63,7 +63,7 @@ function hitungLuasSegitiga() {
     return;
   }
   const luas = (alas * tinggi) / 2;
-  document.getElementById('hasil-luas-segitiga').textContent = `Luas Segitiga = ${luas} cm²`;
+  document.getElementById('hasil-luas-segitiga').textContent = `Luas Segitiga : ${luas} cm²`;
 }
 
 // fungsi untuk menghitung keliling segitiga
@@ -93,7 +93,7 @@ function hitungLuasJajargrnjang() {
 
 // fungsi untuk menghitung keliling jajargenjang
 function hitungKelilingJajargenjang() {
-  const sisiA = parseFloat(documentById('sisi-a-jajargenjang').value);
+  const sisiA = parseFloat(document.getElementById('sisi-a-jajargenjang').value);
   const sisiB = parseFloat(document.getElementById('sisi-b-jajargenjang').value);
   if (isNaN(sisiA) || isNaN(sisiB)) {
     alert('Masukkan nilai yang valid untuk kedua sisi.');
