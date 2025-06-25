@@ -7,7 +7,6 @@ body {
 .header-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: flex-start;
     gap: 150px;
     height: auto;; /* Batas maksimal tinggi */;
@@ -277,7 +276,7 @@ label {
 
   .header-right {
     height: auto; /* ubah dari fixed ke auto */
-    padding: 10px 0; /* beri jarak agar tidak numpuk */
+    padding-bottom: 10px;
   }
 
   .header-right img {
@@ -285,11 +284,11 @@ label {
     height: auto;
     object-fit: contain; /* jaga proporsi gambar */
   }
-}
 
   .kalkulator-box {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
+}
 
