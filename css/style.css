@@ -149,8 +149,8 @@ main {
 
 /* style untuk konten bagian kanan */
 form {
-    flex: 1 1 250px;
-    min-width: 250px;
+    flex: 1 1 280px;
+    min-width: 280px;
 }
 
 .kalkulator-box form p {
