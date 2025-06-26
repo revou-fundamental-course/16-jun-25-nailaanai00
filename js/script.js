@@ -66,18 +66,20 @@ function hitungLuasSegitiga() {
   document.getElementById('hasil-luas-segitiga').textContent = `Luas Segitiga : ${luas} cm²`;
 }
 
-// fungsi untuk menghitung keliling segitiga
 function hitungKelilingSegitiga() {
-  const sisiA = parseFloat(document.getElementById('sisi-a').value);
-  const sisiB = parseFloat(document.getElementById('sisi-b').value);
-  const sisiC = parseFloat(document.getElementById('sisi-c').value);
+  const sisiA = parseFloat(document.getElementById('sisi1-segitiga').value);
+  const sisiB = parseFloat(document.getElementById('sisi2-segitiga').value);
+  const sisiC = parseFloat(document.getElementById('sisi3-segitiga').value);
+
   if (isNaN(sisiA) || isNaN(sisiB) || isNaN(sisiC)) {
     alert('Masukkan nilai yang valid untuk semua sisi.');
     return;
   }
+
   const keliling = sisiA + sisiB + sisiC;
-  document.getElementById('hasil-keliling-segitiga').textContent = `Keliling Segitiga : ${keliling} cm`;
+  document.getElementById('hasil-keliling-segitiga').textContent = `Keliling Segitiga: ${keliling} cm`;
 }
+
 
 // fungsi untuk menghitung luas jajargenjang
 function hitungLuasJajargrnjang() {
