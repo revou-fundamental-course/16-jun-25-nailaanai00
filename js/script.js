@@ -76,7 +76,7 @@ function hitungKelilingSegitiga() {
     return;
   }
   const keliling = sisiA + sisiB + sisiC;
-  document.getElementById('hasil-keliling-segitiga').textContent = `Keliling Segitiga: ${keliling} cm`;
+  document.getElementById('hasil-keliling-segitiga').textContent = `Keliling Segitiga : ${keliling} cm`;
 }
 
 // fungsi untuk menghitung luas jajargenjang
@@ -88,7 +88,7 @@ function hitungLuasJajargrnjang() {
     return;
   }
   const luas = alas * tinggi;
-  document.getElementById('hasil-luas-jajargenjang').textContent = `Luas Jajargenjang: ${luas} cm²`;
+  document.getElementById('hasil-luas-jajargenjang').textContent = `Luas Jajargenjang : ${luas} cm²`;
 }
 
 // fungsi untuk menghitung keliling jajargenjang
@@ -100,5 +100,5 @@ function hitungKelilingJajargenjang() {
     return;
   }
   const keliling = 2 * (sisiA + sisiB);
-  document.getElementById('hasil-keliling-jajargenjang').textContent = `Keliling Jajargenjang: ${keliling} cm`;
+  document.getElementById('hasil-keliling-jajargenjang').textContent = `Keliling Jajargenjang : ${keliling} cm`;
 }
