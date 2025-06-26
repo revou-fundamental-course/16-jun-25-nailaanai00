@@ -1,6 +1,5 @@
 body {
   font-family: 'Poppins', sans-serif;
-  padding: 100px;
   scroll-behavior: smooth;
 }
 
@@ -10,6 +9,8 @@ body {
     align-items: flex-start;
     gap: 150px;
     height: auto;
+    padding: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -266,6 +267,33 @@ input[type="number"] {
     text-align: center;
     font-family: poppins;
 }
+
+
+.footer-container {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+.footer-container p {
+  color:#f2f2f2;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    font-size: 0.85rem;
+    padding: 15px 5px;
+  }
+}
+
 
 
 /* Responsif: jika layar kecil (mobile) */
